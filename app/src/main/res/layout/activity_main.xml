@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="664dp"
+        android:background="#437B9F"
+        android:minHeight="?attr/actionBarSize"
+        android:outlineAmbientShadowColor="@color/material_dynamic_secondary50"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/TodayHeader"
+        android:layout_width="183dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="211dp"
+        android:layout_marginBottom="654dp"
+        android:fontFamily="@font/archivo"
+        android:text="Today"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FAF6F6"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/DateID"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="588dp"
+        android:maxLines="1"
+        android:text="Date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#0B0A0A"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/CityID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="586dp"
+        android:maxLines="1"
+        android:text="City"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tempID"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="171dp"
+        android:layout_marginBottom="453dp"
+        android:text="0"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/WeatherDescID"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="297dp"
+
+        android:text="Weather Description"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/WeatherPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="254dp"
+        android:layout_marginTop="162dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="460dp"
+        app:srcCompat="@drawable/icon_fewclouds" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="492dp"
+        android:text="°"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginBottom="457dp"
+        android:text="C"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/locationPermissionMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Please enable location services."
+        android:textColor="#EC0D0D"
+        android:visibility="gone" />
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch1"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="285dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="685dp"
+        android:maxLines="1"
+        android:text="°F"
+        android:textColor="#F3EFEF"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>
